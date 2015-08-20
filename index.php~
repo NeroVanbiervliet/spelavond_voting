@@ -101,8 +101,8 @@ echo("<form action=\"submit_vote.php\" method=\"post\">");
 
 echo("</form>");
 
-// votes data van vorige ronde ophalen
-$recoveredData = file_get_contents($dirNum . "/votesPrevRound.data");
+// votes data ophalen
+$recoveredData = file_get_contents($dirNum . "/votes.data");
 $votes = unserialize($recoveredData);
 
 // sorteren volgens number of 
