@@ -1,3 +1,13 @@
+<html>
+<body>
+
+Spotlight: spel van de maand
+<br>
+<img src="monopoly_cover.jpg" width="50%" height="50%">
+
+<br>
+<br>
+
 <?php
 
 // huidige directory nummer
@@ -110,8 +120,6 @@ usort($votes, "compareByNumOfVotes");
 
 // info over votes berekenen
 $numOfGames = count($votes);
-$maxVotes = $votes[$numOfGames-1][0];
-
 
 echo("<table>");
 
@@ -131,3 +139,6 @@ for($i = 0; $i < $numOfGames; $i++)
 
 echo("</table>");
 ?>
+
+</body>
+</html>
